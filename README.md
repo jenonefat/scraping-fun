@@ -9,3 +9,6 @@ I will elaborate on these differences in my explanations of each program below.
 I studied the following page to guide me through these scrapes: https://realpython.com/beautiful-soup-web-scraper-python/#keep-practicing
 
 
+### Fake Job Site Scrape
+Scraped site: https://realpython.github.io/fake-jobs/
+  
