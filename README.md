@@ -11,4 +11,7 @@ I studied the following page to guide me through these scrapes: https://realpyth
 
 ### Fake Job Site Scrape
 Scraped site: https://realpython.github.io/fake-jobs/
-  
+I wanted to explore the structure and features of HTML code on a website, and my code in **'fake_job_scrape.py'** reflects that. 
+After sending an HTTP GET request and creating a Beautiful Soup object, I started by grabbing the *broadest* HTML element containing 
+all the job listings (id=ResultsContainer). 
+I narrowed down my search 
