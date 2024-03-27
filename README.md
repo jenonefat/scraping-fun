@@ -16,4 +16,10 @@ After sending an HTTP GET request and creating a Beautiful Soup object, I starte
 all the job listings (id=ResultsContainer). 
 I then narrowed down my search to find *just* the job elements so that I could iterate through them to grab the job features I cared about:
 the title of the job, the company name, and the job location. 
+I further specified my results by filtering down to only those jobs that required the use of Python; I did this by grabbing only the job elements
+that had "python" in the title. However, I also needed to grab other desired features of the Python jobs, so I had to backtrack in the DOM hierarchy
+to access the element that contained all the other job information for *just* the Python listings : (h2_element.parent.parent.parent).
+After grabbing the title, company, and location info for each Python job, I decided I also wanted to include the application link; I accomplished this
+by iterating through each HTML line containing a link tag ("a"), and accessing the 'href' attribute only from those lines that had "apply" 
+in the line text. 
 
