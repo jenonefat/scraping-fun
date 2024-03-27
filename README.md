@@ -23,3 +23,11 @@ After grabbing the title, company, and location info for each Python job, I deci
 by iterating through each HTML line containing a link tag ("a"), and accessing the 'href' attribute only from those lines that had "apply" 
 in the line text. 
 
+
+### File Scrape 
+Scraped file: home.html 
+File source: jimdevops19/codesnippets  ~ this file contains information about fake courses
+To practice scraping an html file (rather than a website), I referenced part of this tutorial: https://www.youtube.com/watch?v=XVv6mJpFOb0
+Rather than sending an HTTP get request, I merely opened the html file and assigned the html text to the "content" variable.
+I created a Beautiful Soup object, and then found the iterable element that contains info about each course.
+I iterated through each of these course cards/elements to grab the course name and price. 
