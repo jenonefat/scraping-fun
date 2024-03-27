@@ -31,3 +31,11 @@ To practice scraping an html file (rather than a website), I referenced part of 
 Rather than sending an HTTP get request, I merely opened the html file and assigned the html text to the "content" variable.
 I created a Beautiful Soup object, and then found the iterable element that contains info about each course.
 I iterated through each of these course cards/elements to grab the course name and price. 
+
+
+### Book Site Scrape
+Scraped site: https://books.toscrape.com/   ~ fake website containing various books available for purchase
+For this scrape, just like the fake job site scrape, I sent a http get request and initiated the parsing process by creating a Beautiful Soup object. I also grabbed the HTML text that would allow me to iterate through each element (the only distinction being that I needed to iterate through each book element rather than each job listing). For each book listed on the first page of the site, I parsed the following features: book title, book cost, rating, and a link that takes you to a page containing a description of what the book is about. 
+In this scrape, unlike the fake job site, I wanted to save all the parsed book features in individual '.txt' files. To do so, I used the enumerate() function to assign an index number to a book during each iteration. The index numbers were used to name each '.txt' file. I placed these files in a new directory (book_info). 
+I additionally wanted to try automating this scrape; I did so by employing the **time** library. I set my **find_books()** function to run every 10 minutes. 
+
